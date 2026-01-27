@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Monetag Verification -->
+<meta name="monetag" content="77ba7eef4229984cfee12de6da1d689a">
+
+<title>maknanya | Official Page</title>
+
+<style>
+body{
+  margin:0;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial;
+  background: radial-gradient(1200px 600px at top,#eef6ff,#f5f3ff);
+  min-height:100vh;
+  display:flex; align-items:center; justify-content:center;
+}
+.wrapper{max-width:420px;width:100%;padding:30px 22px}
+.username{text-align:center;font-size:22px;font-weight:800}
+.bio{text-align:center;font-size:14px;color:#6b7280;margin-top:8px}
+.helper{text-align:center;font-size:13px;color:#4b5563;margin-top:12px}
+.card{
+  margin-top:24px;background:#ffffffdd;backdrop-filter:blur(14px);
+  border-radius:26px;padding:26px 20px;
+  box-shadow:0 20px 50px rgba(0,0,0,.08)
+}
+.link,.premium{
+  display:block;text-decoration:none;padding:18px;border-radius:18px;
+  margin:14px 0;font-weight:700;text-align:center;color:#1f2937
+}
+.link{background:linear-gradient(135deg,#fff,#f5f7ff)}
+.premium{background:linear-gradient(135deg,#ede9fe,#fdf4ff)}
+.sub{font-size:12.5px;color:#6b7280;margin-top:6px}
+.footer{text-align:center;font-size:12px;color:#6b7280;margin-top:20px}
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+  <div class="username">maknanya</div>
+  <div class="bio">Download ebook free & curated digital content.</div>
+  <div class="helper">Jika terjadi error, silakan coba semua link satu per satu.</div>
+
+  <div class="card">
+    <a class="link monetag" data-link="https://otieu.com/4/10495863">
+      Link 1 <div class="sub">Free ebook download</div>
+    </a>
+
+    <a class="link monetag" data-link="https://otieu.com/4/10441516">
+      Link 2 <div class="sub">Free ebook download</div>
+    </a>
+
+    <a class="link monetag" data-link="https://drive.google.com/drive/folders/1RA-ce4PgjLXpaVngOuwVCI6kGSbwdsiT">
+      Link 3 <div class="sub">Free ebook download</div>
+    </a>
+
+    <a class="premium" href="https://lynk.id/maknanya8" target="_blank">
+      Premium Ebook <div class="sub">Full version · Exclusive access</div>
+    </a>
+  </div>
+
+  <div class="footer">Access may vary by region</div>
+</div>
+
+<script>
+/* ===== SAFE + GACOR ADS LOADER =====
+   - No auto-load
+   - Load after click only
+   - Delay bertahap
+   - Satu kali per sesi
+*/
+let adsLoaded = sessionStorage.getItem("adsLoaded") === "1";
+
+function loadAdsSafely(){
+  if(adsLoaded) return;
+  adsLoaded = true;
+  sessionStorage.setItem("adsLoaded","1");
+
+  // 1) MULTI TAG (CPM / Mixed)
+  setTimeout(()=>{
+    const s1 = document.createElement("script");
+    s1.src = "https://quge5.com/88/tag.min.js";
+    s1.dataset.zone = "205836";
+    s1.async = true;
+    s1.setAttribute("data-cfasync","false");
+    document.body.appendChild(s1);
+  }, 600);
+
+  // 2) POPUNDER (delayed)
+  setTimeout(()=>{
+    const s2 = document.createElement("script");
+    s2.src = "https://al5sm.com/tag.min.js";
+    s2.dataset.zone = "10524355";
+    document.body.appendChild(s2);
+  }, 1400);
+}
+
+// Interaksi manusia: klik link
+document.querySelectorAll(".monetag").forEach(btn=>{
+  btn.addEventListener("click", e=>{
+    e.preventDefault();
+    loadAdsSafely();
+    setTimeout(()=>{ window.location.href = btn.dataset.link; }, 700);
+  });
+});
+</script>
+
+</body>
+</html>
